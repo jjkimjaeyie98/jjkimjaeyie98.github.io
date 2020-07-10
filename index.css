@@ -1,0 +1,403 @@
+/* 전체 */
+	a{text-decoration: none;}
+	a:link {color: white;}
+	a:visited {color: white;}
+	a:hover {color: #black;}
+
+	* {
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        font-family: 'Noto Sans', sans-serif;
+		font-family: 'Noto Sans KR', sans-serif;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #white;
+        line-height: 150%;
+
+    }
+    #wrap {
+
+    }
+    ul {
+        list-style-type: none;
+    }
+
+
+/* 레이아웃 */
+
+	/* 너비가 600픽셀 미만인 스마트폰을 위한 기본 설정 */
+    [class*="c_"] {
+        width: 100%;
+        float: left;
+        padding: 20px;
+        border:solid 1px black;
+		margin:10px;
+    }
+
+    /* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+    @media only screen and (min-width: 600px) {
+        .c_m_1 {width: 8.33%;}
+        .c_m_2 {width: 16.66%;}
+        .c_m_3 {width: 25%;}
+        .c_m_4 {width: 33.33%;}
+        .c_m_5 {width: 41.66%;}
+        .c_m_6 {width: 50%;}
+        .c_m_7 {width: 58.33%;}
+        .c_m_8 {width: 66.66%;}
+        .c_m_9 {width: 75%;}
+        .c_m_10 {width: 83.33%;}
+        .c_m_11 {width: 91.66%;}
+        .c_m_12 {width: 100%;}
+    }
+
+    /* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+    @media only screen and (min-width: 768px) {
+        .c_1 {width: 8.33%; }
+        .c_2 {width: 16.66%; }
+        .c_3 {width: 25%; }
+        .c_4 {width: 33.33%; }
+        .c_5 {width: 41.66%; }
+        .c_6 {width: 50%; }
+        .c_7 {width: 58.33%; }
+        .c_8 {width: 66.66%; }
+        .c_9 {width: 75%; }
+        .c_10 {width: 83.33%; }
+        .c_11 {width: 91.66%; }
+        .c_12 {width: 100%; }
+    }
+
+/* header */
+
+	#top_menu {
+		border-bottom: solid 1px black;
+		background-color: black;
+		padding: 8px 10px 8px 10px;
+		width: 100%;
+		margin: 0px;
+		font-size: 12px;
+	}
+	#top_menu ul {
+		background-color:black;
+		padding-left: 10px;
+	}
+	#top_menu ul li {
+		float: left;
+		background-color:black;
+		color: white;
+		padding-left: 30px;
+
+	}
+
+	#top_menu img {
+		display: inline;
+		width: 20px;
+	}
+
+	#box1 {
+		font-weight: bold;
+		font-size: 25px;
+		border:solid 0px;
+		background-image: url(img/box1.png);
+		background-repeat: no-repeat;
+		height: 140px;
+		padding: 10px 5px 5px 20px;
+
+	}
+	#box2 {
+		background-color: white;
+		position: relative;
+		border-bottom: solid 10px white;
+		border-right: solid 10px white;
+	}
+		#title {
+			font-weight: bolder;
+			font-size: 30px;
+			font-style: italic;
+			padding:10px 10px 30px 10px;
+			background-color: white;
+		}
+		#date {
+			font-weight: bolder;
+			font-size: 20px;
+			padding:10px 10px 20px 10px;
+			background-color: white;
+		}
+		#pp {
+			font-size: 15px;
+			padding:10px 10px 20px 10px;
+			background-color: white;
+		}
+		#xx {
+			background-color: white;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+
+
+	#box3 {
+		color: white;
+		font-weight: border;
+		font-size: 12px;
+		border:solid 0px;
+		padding: 0px;
+
+
+	}
+	#box3 ul li{
+		float: left;
+		padding-left: 5px;
+		font-weight: bold;
+	}
+	#box3 img {
+		width: 200px;
+		padding-top: 4px;
+		margin-right: 4px;
+
+	}
+
+	#box3_1 {
+		border:solid;
+		background-color: white;
+		border:solid 1px black;
+		border-bottom: solid 7px black;
+		border-right: solid 7px black;
+		font-size: 12px;
+	}
+
+	#box3_2 {
+		padding: 0px;
+		overflow: hidden;
+
+	}
+	#box3_2 img{
+		width: 100%;
+
+		overflow: hidden;
+		display: block;
+
+	}
+
+	#head {
+		margin-bottom: 600px;
+	}
+
+/* main */
+	#main {
+		margin-bottom: 200px;
+	}
+	#box4 {
+		background-color: white;
+		padding: 20px;
+		position: relative;
+	}
+	#myname {
+		font-weight: bold;
+		font-size: 30px;
+		padding-bottom: 15px;
+		background-color: white;
+		padding-top: 10px;
+	}
+	#introduce_p {
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 180%;
+		padding-bottom: 150px;
+		background-color: white;
+	}
+	#job_card1{
+
+		border:solid 1px black;
+		background-color: #white;
+		padding: 5px 5px 5px 10px;
+		margin-bottom: 5px;
+		width: 50%;
+		position: absolute;
+		left: 20px;
+		bottom: 100px;
+		font-size: 13px;
+		font-weight: bold;
+
+	}
+	#job_card2{
+
+		border:solid 1px black;
+		background-color: #black;
+		padding: 5px 5px 5px 10px;
+		margin-bottom: 5px;
+		width: 50%;
+		position: absolute;
+		left: 20px;
+		bottom: 60px;
+		font-size: 13px;
+		font-weight: bold;
+
+	}
+	#job_card3{
+
+		border:solid 1px black;
+		background-color: #black;
+		padding: 5px 5px 5px 10px;
+		margin-bottom: 5px;
+		width: 50%;
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		font-size: 13px;
+		font-weight: bold;
+
+	}
+
+	#box5{
+		background-color: white;
+		padding: 18px;
+	}
+	#box5 #box5_title {
+		font-size: 30px;
+		font-weight: bold;
+		padding-bottom: 30px;
+		background-color: white;
+	}
+	#box5_list {
+		font-size: 12px;
+		font-weight: bold;
+		background-color: white;
+		padding-bottom: 30px;
+		line-height: 170%;
+	}
+
+	#box6 {
+		padding: 0px;
+		overflow: hidden;
+
+	}
+	#box6 img{
+		width: 100%;
+
+		overflow: hidden;
+		display: block;
+
+	}
+
+	#box7 {
+		background-color: #white;
+		border-bottom: solid 10px black;
+		border-right: solid 10px black;
+	}
+	#box7_title {
+		font-size: 30px;
+		font-weight: bold;
+		background-color: #white;
+		padding-bottom: 15px;
+	}
+	#box7_description {
+		font-size: 13px;
+		font-weight: bold;
+		background-color: #white;
+	}
+
+/* main2 */
+	#main2 {
+
+
+	}
+	#box8 {
+		background-color:#white;
+		font-size: 30px;
+		font-weight: bold;
+		padding-bottom: 40px;
+
+	}
+	#box8_1 {
+		border:solid 0px;
+	}
+
+	#box9 {
+		padding: 0px;
+	}
+	#box9 img{
+		width: 100%;
+		overflow: hidden;
+		display: block;
+	}
+
+	#box10 {
+		padding: 0px;
+	}
+	#box10 img{
+		width: 100%;
+		overflow: hidden;
+		display: block;
+	}
+
+	#box11 {
+		padding: 0px;
+	}
+	#box11 img{
+		width: 100%;
+		overflow: hidden;
+		display: block;
+	}
+
+	#box12 {
+		padding: 0px;
+	}
+	#box12 img{
+		width: 100%;
+		overflow: hidden;
+		display: block;
+	}
+	#box13 {
+		padding: 0px;
+	}
+	#box13 img{
+		width: 100%;
+		overflow: hidden;
+		display: block;
+	}
+	#box14 {
+		padding: 0px;
+	}
+	#box14 img{
+		width: 100%;
+		overflow: hidden;
+		display: block;
+	}
+
+
+
+
+
+/*footer*/
+	#top_button {
+		position: fixed;
+		right: 25px;
+		bottom: 60px;
+
+
+	}
+	#top_button img {
+		width: 50px;
+
+	}
+	#footer {
+		border-top: solid 1px black;
+		padding: 20px;
+		font-size: 10px;
+		color: #000;
+		text-align: center;
+		background-color: white;
+		margin-top: 100px;
+
+	}
+/* clear */
+	.clear {
+		clear: both;
+		padding: 0px;
+		overflow:hidden;
+		height: 0px;
+		margin: 0px;
+		border:none;
+	}
